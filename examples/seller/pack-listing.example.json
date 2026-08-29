@@ -1,0 +1,47 @@
+{
+  "assetKind": "agent_pack",
+  "name": "Evidence Decision Assistant",
+  "shortDescription": "Turns supplied evidence into a traceable decision memo with explicit uncertainty and next actions.",
+  "businessUseCase": "Teams lose decision quality when sources, assumptions, constraints, and unresolved questions are mixed together.",
+  "primaryCategory": "research",
+  "productType": "agent_pack",
+  "priceUsd": 0,
+  "stack": {
+    "runtime": ["Tetrees Agent"],
+    "memory": ["Tetrees Memory"]
+  },
+  "tags": ["research", "evidence", "decision-support"],
+  "compatibility": {
+    "models": ["openai:gpt-5.4-mini", "anthropic:claude-haiku-4-5"]
+  },
+  "agentSummary": {
+    "capabilities": ["evidence-synthesis", "decision-support"],
+    "models": ["openai:gpt-5.4-mini", "anthropic:claude-haiku-4-5"],
+    "runtime": "Tetrees Agent",
+    "memory": "Tetrees Memory",
+    "format": "taip/1",
+    "listing": {
+      "problem": "Teams lose decision quality when sources, assumptions, constraints, and unresolved questions are mixed together.",
+      "targetUsers": ["Product researchers", "Technical decision makers"],
+      "inputs": ["A decision question", "Supplied evidence and constraints"],
+      "workflow": ["Separate sourced facts from assumptions and gaps", "Compare options against explicit constraints", "Draft a reversible recommendation and next evidence requests"],
+      "outputs": ["Evidence map", "Decision memo", "Uncertainty and follow-up list"],
+      "exampleUses": [
+        {
+          "title": "Compare vendors with incomplete evidence",
+          "scenario": "A team must shortlist vendors while security, migration, and pricing evidence is incomplete.",
+          "exampleRequest": "Compare these vendors against our constraints and identify what evidence to request next.",
+          "expectedOutcome": "A traceable comparison matrix, explicit uncertainty, and a reversible recommendation."
+        },
+        {
+          "title": "Turn research notes into a decision memo",
+          "scenario": "An owner has mixed notes and needs a concise artifact without losing the evidence trail.",
+          "exampleRequest": "Convert these notes into a decision memo that labels evidence, inference, risk, and next actions.",
+          "expectedOutcome": "A concise memo whose claims are tied to supplied evidence and clearly labeled assumptions."
+        }
+      ],
+      "successCriteria": ["Every conclusion distinguishes evidence from inference", "Missing evidence and uncertainty are explicit", "The recommendation is linked to stated constraints"],
+      "limitations": ["Cannot verify sources that were not supplied or fetched through an enabled cited skill", "Does not make legal, medical, or investment decisions"]
+    }
+  }
+}

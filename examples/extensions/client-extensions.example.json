@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "bindings": [
+    {
+      "extensionId": "replace.with.auditioned.https.extension",
+      "kind": "https_api",
+      "baseUrl": "https://api.example.com",
+      "timeoutMs": 15000,
+      "methods": {
+        "lookup_record": {
+          "path": "/v1/records/lookup",
+          "httpMethod": "POST",
+          "headers": {
+            "authorization": "env:EXAMPLE_API_AUTHORIZATION"
+          }
+        }
+      }
+    },
+    {
+      "extensionId": "replace.with.auditioned.mcp.extension",
+      "kind": "mcp",
+      "command": "npx",
+      "args": ["-y", "@your-org/auditioned-mcp-server"],
+      "envKeys": ["YOUR_MCP_ACCESS_TOKEN"],
+      "timeoutMs": 20000,
+      "methods": {
+        "search_workspace": "search_workspace"
+      }
+    },
+    {
+      "extensionId": "replace.with.auditioned.local.extension",
+      "kind": "local_skill",
+      "command": "node",
+      "args": ["/absolute/path/issue-summary.mjs"],
+      "envKeys": [],
+      "timeoutMs": 10000,
+      "methods": {
+        "summarize_issue": "summarize_issue"
+      }
+    }
+  ]
+}

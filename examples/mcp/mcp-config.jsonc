@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "tetrees-ai": {
+      "command": "npx",
+      "args": ["-y", "https://ex.tetrees.ai/pkg/tetrees-mcp.tgz?v=2.2.0"],
+      "env": {
+        "TETREES_API_URL": "https://ex.tetrees.ai/api",
+        "TETREES_TOKEN": "<revocable-account-token>",
+
+        // Optional. Keep only the provider you use and never commit a real key.
+        "OPENAI_API_KEY": "<optional-local-BYOK>",
+        "ANTHROPIC_API_KEY": "<optional-local-BYOK>",
+        "ZAI_API_KEY": "<optional-local-BYOK>",
+
+        // Optional user-owned bindings for extensions declared by an auditioned Pack.
+        "TETREES_CLIENT_EXTENSIONS_FILE": "/absolute/path/client-extensions.json"
+      }
+    }
+  }
+}

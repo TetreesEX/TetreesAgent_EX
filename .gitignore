@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.taip
+*.zip
+*.tgz
+downloads/
+coverage/
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+{
+  "name": "tetrees-agent-ex-integration-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public clients and examples for Tetrees Agent MCP and the Tetrees AI Pack exchange",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "tetrees": "node src/cli.mjs",
+    "mcp:inspect": "node examples/mcp/inspect-tools.mjs",
+    "test": "node --test",
+    "check:public-boundary": "node scripts/check-public-boundary.mjs",
+    "check": "npm test && npm run check:public-boundary"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0"
+  }
+}
