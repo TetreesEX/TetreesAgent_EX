@@ -2,6 +2,20 @@
 
 Public integration kit for using, growing, buying, and publishing **Tetrees AI Packs** through the hosted Tetrees Agent MCP and API.
 
+<p align="center">
+  <a href="https://ex.tetrees.ai/en?utm_source=github&utm_medium=readme&utm_campaign=tetrees_agent_public_kit">
+    <img src="https://ex.tetrees.ai/images/ai-packs/tetrees-agent-hero.webp" width="960" alt="Tetrees Agent selecting useful intelligence from a holographic shelf" />
+  </a>
+</p>
+
+<p align="center">
+  <strong><a href="https://ex.tetrees.ai/en/products?utm_source=github&utm_medium=readme&utm_campaign=tetrees_agent_public_kit">Explore Tetrees AI Packs</a></strong>
+  &nbsp;·&nbsp;
+  <a href="https://ex.tetrees.ai/en/mcp?utm_source=github&utm_medium=readme&utm_campaign=tetrees_agent_public_kit">Connect through MCP</a>
+  &nbsp;·&nbsp;
+  <a href="https://ex.tetrees.ai/en/sell?utm_source=github&utm_medium=readme&utm_campaign=tetrees_agent_public_kit">Publish an AI Pack</a>
+</p>
+
 This repository makes the developer-facing contract transparent. It intentionally contains clients, configuration examples, and safe extension samples—not Tetrees Agent internals, private Pack intelligence, Agent AVCP scoring, service prompts, storage, moderation, or exchange infrastructure.
 
 ## What you can build
