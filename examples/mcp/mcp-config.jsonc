@@ -2,7 +2,7 @@
   "mcpServers": {
     "tetrees-ai": {
       "command": "npx",
-      "args": ["-y", "https://ex.tetrees.ai/pkg/tetrees-mcp.tgz?v=2.2.0"],
+      "args": ["-y", "https://ex.tetrees.ai/pkg/tetrees-mcp.tgz?v=2.2.1"],
       "env": {
         "TETREES_API_URL": "https://ex.tetrees.ai/api",
         "TETREES_TOKEN": "<revocable-account-token>",

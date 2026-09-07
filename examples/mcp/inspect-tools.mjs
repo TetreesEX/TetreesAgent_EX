@@ -7,7 +7,7 @@ if (!process.env.TETREES_TOKEN) {
 
 const environment = Object.fromEntries(Object.entries(process.env).filter(([, value]) => typeof value === "string"));
 environment.TETREES_API_URL ||= "https://ex.tetrees.ai/api";
-const packageUrl = "https://ex.tetrees.ai/pkg/tetrees-mcp.tgz?v=2.2.0";
+const packageUrl = "https://ex.tetrees.ai/pkg/tetrees-mcp.tgz?v=2.2.1";
 
 const transport = new StdioClientTransport({
   command: "npx",
