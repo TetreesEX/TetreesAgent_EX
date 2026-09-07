@@ -1,16 +1,54 @@
 {
-  "name": "tetrees-agent-ex-integration-kit",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Public clients and examples for Tetrees Agent MCP and the Tetrees AI Pack exchange",
+  "name": "@tetrees/mcp",
+  "version": "2.2.1",
+  "private": false,
+  "mcpName": "ai.tetrees/mcp",
+  "description": "Tetrees MCP and public clients for the Tetrees AI Pack exchange",
   "type": "module",
   "license": "MIT",
+  "bin": {
+    "tetrees-mcp": "packages/mcp/dist/index.js",
+    "tetrees": "src/cli.mjs"
+  },
+  "files": [
+    "packages/mcp/dist",
+    "packages/mcp/server.json",
+    "packages/mcp/README.md",
+    "packages/mcp/LICENSE",
+    "src",
+    "examples",
+    "docs",
+    "README.md",
+    "LICENSE",
+    "AGENTS.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TetreesEX/TetreesAgent_EX.git"
+  },
+  "homepage": "https://ex.tetrees.ai/en/mcp",
+  "bugs": {
+    "url": "https://github.com/TetreesEX/TetreesAgent_EX/issues",
+    "email": "business@insightvessel.io"
+  },
+  "author": "InsightVessel <business@insightvessel.io>",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "tetrees",
+    "ai-packs",
+    "taip"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=20"
   },
   "scripts": {
     "tetrees": "node src/cli.mjs",
     "mcp:inspect": "node examples/mcp/inspect-tools.mjs",
+    "start": "node packages/mcp/dist/index.js",
     "test": "node --test",
     "check:public-boundary": "node scripts/check-public-boundary.mjs",
     "check": "npm test && npm run check:public-boundary"

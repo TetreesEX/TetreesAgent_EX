@@ -1,0 +1,60 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.tetrees/mcp",
+  "title": "Tetrees MCP",
+  "description": "Search, acquire, run, grow, checkpoint, verify and publish portable TAIP/1 agent intelligence through Tetrees.",
+  "websiteUrl": "https://ex.tetrees.ai/en/mcp",
+  "repository": {
+    "url": "https://github.com/TetreesEX/TetreesAgent_EX",
+    "source": "github"
+  },
+  "version": "2.2.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@tetrees/mcp",
+      "version": "2.2.1",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "TETREES_API_URL",
+          "description": "Tetrees API base URL",
+          "isRequired": true,
+          "isSecret": false,
+          "format": "https://ex.tetrees.ai/api"
+        },
+        {
+          "name": "TETREES_TOKEN",
+          "description": "Revocable account API token from Tetrees Account settings",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "TETREES_CLIENT_EXTENSIONS_FILE",
+          "description": "Optional absolute path to local client-extensions.json (never uploaded)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "Optional BYOK OpenAI key for a selected run; never persisted by Tetrees",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Optional BYOK Anthropic key for a selected run; never persisted by Tetrees",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ZAI_API_KEY",
+          "description": "Optional BYOK Z.AI key for a selected run; never persisted by Tetrees",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

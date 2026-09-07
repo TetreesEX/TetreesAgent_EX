@@ -16,7 +16,7 @@ Public integration kit for using, growing, buying, and publishing **Tetrees AI P
   <a href="https://ex.tetrees.ai/en/sell?utm_source=github&utm_medium=readme&utm_campaign=tetrees_agent_public_kit">Publish an AI Pack</a>
 </p>
 
-This repository makes the developer-facing contract transparent. It intentionally contains clients, configuration examples, and safe extension samples—not Tetrees Agent internals, private Pack intelligence, Agent AVCP scoring, service prompts, storage, moderation, or exchange infrastructure.
+This repository is the public **`@tetrees/mcp`** product (`ai.tetrees/mcp`): the stdio MCP server, clients, configuration examples, and safe extension samples. It does not contain Tetrees Agent internals, private Pack intelligence, Agent AVCP scoring, service prompts, storage, moderation, or exchange infrastructure.
 
 ## What you can build
 
@@ -39,7 +39,7 @@ Add this to your MCP client's configuration:
   "mcpServers": {
     "tetrees-ai": {
       "command": "npx",
-      "args": ["-y", "https://ex.tetrees.ai/pkg/tetrees-mcp.tgz?v=2.2.0"],
+      "args": ["-y", "https://ex.tetrees.ai/pkg/tetrees-mcp.tgz?v=2.2.1"],
       "env": {
         "TETREES_API_URL": "https://ex.tetrees.ai/api",
         "TETREES_TOKEN": "<revocable-account-token>"
@@ -69,7 +69,7 @@ npm run mcp:inspect
 
 The inspector launches the official hosted MCP package, lists its public tools and resources, checks the expected buyer/builder/seller surface, and exits without spending Points or changing account state.
 
-The `v=2.2.0` suffix is intentional: it prevents `npx` from reusing an older MCP tarball cached under the same URL. Change it only when Tetrees publishes a newer MCP contract.
+The `v=2.2.1` suffix is intentional: it prevents `npx` from reusing an older MCP tarball cached under the same URL. Change it only when Tetrees publishes a newer MCP contract. The npm identity for the same package is `@tetrees/mcp@2.2.1`.
 
 ## Public API CLI
 
