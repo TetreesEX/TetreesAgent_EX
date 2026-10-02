@@ -5,6 +5,7 @@ Public integration kit for using, growing, buying, and publishing **Tetrees AI P
 <p align="center">
   <a href="https://ex.tetrees.ai/en?utm_source=github&utm_medium=readme&utm_campaign=tetrees_agent_public_kit">
     <img src="https://ex.tetrees.ai/images/ai-packs/tetrees-agent-hero.webp" width="960" alt="Tetrees Agent selecting useful intelligence from a holographic shelf" />
+[![MCP Queen operational grade](https://mcpqueen.com/badge/ai.tetrees.ex/mcp.svg)](https://mcpqueen.com/s/ai.tetrees.ex/mcp)
   </a>
 </p>
 
